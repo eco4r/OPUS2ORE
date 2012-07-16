@@ -1,0 +1,8 @@
+Options +FollowSymlinks
+RewriteEngine On
+
+RewriteRule ^([0-9]+)/supplement$ /opus/ore/ore.php?var=$1&entity=supplement [L]
+RewriteRule ^([0-9]+)/text$ /opus/ore/ore.php?var=$1&entity=text [L]
+RewriteRule ^([0-9]+)/metadata$ /opus/ore/ore.php?var=$1&entity=metadata [L]
+
+RewriteRule ^([0-9]+)$ /opus/ore/ore.php?var=$1&entity= [L]
